@@ -1,11 +1,11 @@
 import "./App.css";
-import { useList } from "./hooks/useList";
-import { useCounter } from "./hooks/useCounter";
+import { useList } from "./part2/hooks/useList";
+import { useCounter } from "./part2/hooks/useCounter";
 
 function App() {
   // Entire thing bellow should work. you don't have to edit this file, only implement  hooks
   const [list, { push, pop, clear, reset, map }] = useList([1, 2, 3]);
-
+  
   const { value, inc, dec, set } = useCounter(10);
 
   return (
